@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hexo</title>
+  <title>MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="广东科技学院2016级，软件设计师。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MoonBird博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="MoonBird博客">
+<meta property="og:description" content="广东科技学院2016级，软件设计师。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="MoonBird">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -43,10 +45,10 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">MoonBird</a></h1>
 		</hgroup>
 		
 
@@ -74,16 +76,24 @@
     			
             
 		</nav>
+		<nav>
+			<ul style="font-size:12px; font-style:oblique; font-weight:100">
+				总文章数：2
+			</ul>
+		</nav>
+		<br/>
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:moonbird998@qq.com" title="mail"><i class="icon-mail"></i></a>
+		        
+					<a class="google" target="_blank" href="#" title="google"><i class="icon-google"></i></a>
 		        
 			</div>
 		</nav>
@@ -101,10 +111,10 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">MoonBird</h1>
 			</hgroup>
 			
 			
@@ -118,13 +128,15 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:moonbird998@qq.com" title="mail"><i class="icon-mail"></i></a>
+			        
+						<a class="google" target="_blank" href="#" title="google"><i class="icon-google"></i></a>
 			        
 				</div>
 			</nav>
@@ -173,48 +185,39 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><em>*特别注意：本篇文章所有的终端命令输入截图均在Windows终端操作，与Linux和Mac等终端输入命令会有所区别（在相关章节会给出相关环境下的命令）！</em></p>
-<blockquote>
-<h2 id="第一章-准备阶段"><a href="#第一章-准备阶段" class="headerlink" title="第一章 准备阶段"></a>第一章 准备阶段</h2><blockquote>
-<p><strong>1.安装:<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js官网</a></strong><br><strong>&emsp;1.1下载Node.js</strong><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.1.1.png" alt><br><strong>&emsp;1.2安装Node.js</strong><br>&emsp;&emsp;不停点击“下一步”即可。<br>&emsp;&emsp;查看安装的Node版本，终端输入<code>node -v</code>。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.2.1.png" alt><br><strong>2.安装:淘宝的cnpm管理器</strong><br><strong>&emsp;2.1终端输入</strong><br>&emsp;&emsp;<code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.2.1.1.png" alt><br><strong>3.安装:Hexo框架</strong><br><strong>&emsp;3.1终端输入</strong><br>&emsp;&emsp;<code>cnpm install -g hexo-cli</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.3.1.1.png" alt></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="第二章-正式搭建阶段"><a href="#第二章-正式搭建阶段" class="headerlink" title="第二章 正式搭建阶段"></a>第二章 正式搭建阶段</h2><blockquote>
-<p><strong>1.新建空文件夹</strong><br>&emsp;&emsp;建立一个空文件夹，之后所有的博客搭建信息都在这个文件夹里，如果过程中出现错误，可以删除这个文件夹重新建立。<br>&emsp;&emsp;终端输入<code>mkdir bolg</code>，bolg是自定义的目录名称。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.1.1.png" alt><br><em>*之后所有对博客操作的命令均在这个目录下进行</em><br><strong>2.使用Hexo框架生成博客</strong><br>&emsp;&emsp;Mac:<code>sudo hexo init</code>  # 初始化博客<br>&emsp;&emsp;Windows:<code>hexo init</code>  # 初始化博客<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.2.1.png" alt><br><em>*注意：Windows系统使用命令前提是要安装GIT，并且使用管理员权限打开终端。（如何安装git可以看相关笔记）</em><br><em>*可能出现的问题：Windows安装时出现“Unexpected end of JSON input while parsing near···”</em><br><em>*解决方案：清楚缓存，终端运行<code>npm cache clean -force</code></em><br><strong>3.启动博客</strong><br>&emsp;&emsp;终端运行：<code>hexo s</code>  # 启动博客<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.1.png" alt><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.2.png" alt><br><em>*到这一步，博客的搭建基本完成！</em><br><strong>4.创建一篇新的博客文章</strong><br>&emsp;&emsp;终端运行：<code>hexo n &quot;文章名称&quot;</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.4.1.png" alt><br><strong>5.编辑博客文章</strong><br>&emsp;&emsp;Windows系统可以使用VSCODE软件打开文件进行编辑，文件在博客根目录下的/source/_posts文件夹中，文件后缀为.md。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.5.1.png" alt><br>&emsp;&emsp;Linux可以使用vim编辑器打开：<code>vim 文章名称</code><br><strong>6.清理和生成</strong><br>&emsp;&emsp;终端输入：<code>hexo clean</code>  # 清理<br>&emsp;&emsp;终端输入：<code>hexo g</code>  # 生成<br>&emsp;&emsp;做完上面操作后终端输入<code>hexo s</code>启动博客，打开浏览器进入博客地址即可看到新添加的文章。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.6.1.png" alt></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="第三章-部署博客到github上"><a href="#第三章-部署博客到github上" class="headerlink" title="第三章 部署博客到github上"></a>第三章 部署博客到github上</h2><blockquote>
-<p><strong>1.登录<a href="https://github.com/" target="_blank" rel="noopener">github</a></strong><br><strong>2.创建一个创库</strong><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.1.png" alt><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.2.png" alt><br><em>*注意：用户部署个人博客的github创库名称必须符合特定要求才行</em><br><em>*命名要求：</em> <code>昵称.github.io</code><br><strong>3.在bolg目录下安装git部署插件</strong><br>&emsp;&emsp;MAC：<code>cnpm install --save hexo-deployer-git</code><br>&emsp;&emsp;Windows：<code>cnpm install --save hexo-deployer-git</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.3.png" alt><br><strong>4.配置bolg目录下的_config.yml文件</strong><br>&emsp;&emsp;打开博客根目录下的_config.yml文件，直接翻到最后一行，加入创库相关信息。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.1.png" alt><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.2.png" alt><br><strong>5.设置Git Bash的global身份</strong><br><em>*这一步如果以前做过的可以不做。</em><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.5.1.png" alt><br><strong>6.部署到远端</strong><br>&emsp;&emsp;终端输入：<code>hexo d</code><br>&emsp;&emsp;创库出现图中内容即为部署成功。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.6.1.png" alt><br><strong>7.使用浏览器访问</strong><br>&emsp;&emsp;浏览器输入前面创建的创库名称作为地址即可访问博客。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.7.1.png" alt></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="第四章-自定义博客主题"><a href="#第四章-自定义博客主题" class="headerlink" title="第四章 自定义博客主题"></a>第四章 自定义博客主题</h2><blockquote>
-<p><strong>1.下载主题</strong><br>&emsp;&emsp;推荐一个主题地址：<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a><br>&emsp;&emsp;终端输入：<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>，将主题克隆到博客根目录下的themes/yilia文件夹中。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.1.1.png" alt><br><strong>2.配置bolg目录下的_config.yml文件</strong><br>&emsp;&emsp;修改博客根目录下的_config.yml里“theme: landscape”成“theme: yilia”<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.2.1.png" alt><br><strong>3.重新清理、生成和启动博客</strong><br>&emsp;&emsp;终端输入：<br>&emsp;&emsp;<code>hexo clean</code>  # 清理<br>&emsp;&emsp;<code>hexo g</code>  # 生成<br>&emsp;&emsp;<code>hexo s</code>  # 启动<br><strong>4.重新部署到创库</strong><br>&emsp;&emsp;<code>hexo d</code>  # 部署</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="第五章-博客图片问题"><a href="#第五章-博客图片问题" class="headerlink" title="第五章 博客图片问题"></a>第五章 博客图片问题</h2><p>&emsp;&emsp;本章主要解决的是Markdown文章中使用的图片路径和Hexo博客发布时的图片路径不一致的问题。<br>&emsp;&emsp;解决方法：使用<strong><em>CodeFalling/hexo-asset=image</em></strong><strong>插件</strong></p>
-<blockquote>
-<p><strong>1.修改_config.yml文件</strong><br>&emsp;&emsp;确认<em>_config.yml</em>文件中有<em>post_asset_folder:true</em><br><em>*Hexo提供了一种更方便管理Asset的设定:post_asset_folder,当您设置post_asset_folder为true参数后，在新建文章时，Hexo会自动建立一个与文章名称同名的文件夹；以前的文章可以通过手动创建同名文件夹。</em><br><strong>2.安装hexo-assert-image</strong><br>&emsp;&emsp;在博客根目录下执行：<br>&emsp;&emsp;<code>npm install https://github.com/CodeFalling/hexo-asset-image --save</code><br><strong>3.Markdown文章中使用</strong><br>&emsp;&emsp;<strong>格式：</strong><code>![](文章同级且同名的文件夹名称/图片名称)</code><br>&emsp;&emsp;<strong>eg:</strong><code>![](使用Hexo框架搭建个人技术博客/5.3.1.png)</code></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="第六章-继续更新…"><a href="#第六章-继续更新…" class="headerlink" title="第六章 继续更新…"></a>第六章 继续更新…</h2></blockquote>
-<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><p>&emsp;&emsp;<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br>&emsp;&emsp;<a href="https://www.jianshu.com/p/950f8f13a36c" target="_blank" rel="noopener">hexo博客图片问题</a></p>
-
+        
       
 
       
     </div>
     <div class="article-info article-info-index">
       
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
       
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">yilia主题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/">网管加钟！ >></a>
         </p>
       
 
@@ -222,6 +225,7 @@
       <div class="clearfix"></div>
     </div>
   </div>
+	
 </article>
 
 <aside class="wrap-side-operation">
@@ -239,6 +243,7 @@
         
     </div>
 </aside>
+
 
 
 
@@ -265,19 +270,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
       
 
       
@@ -289,7 +282,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/05/22/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/05/22/hello-world/">网管加钟！ >></a>
         </p>
       
 
@@ -297,6 +290,7 @@
       <div class="clearfix"></div>
     </div>
   </div>
+	
 </article>
 
 <aside class="wrap-side-operation">
@@ -318,6 +312,7 @@
 
 
 
+
   
   
 
@@ -329,13 +324,24 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 John Doe
+    		&copy; 2020 MoonBird
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
     </div>
   </div>
+	<!-- 根据个人喜好在相应位置添加以下代码 -->
+	<div calss="count-span">
+		<span id="busuanzi_container_site_pv">
+			总访问量: <span id="busuanzi_value_site_pv"></span>次|
+		</span>
+		<span id="busuanzi_container_site_uv">
+			总访客量: <span id="busuanzi_value_site_uv"></span>人次
+		</span>
+	</div>
+	<!-- 根据个人喜好在相应位置添加以上代码 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </footer>
     </div>
     <script>
@@ -410,6 +416,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>

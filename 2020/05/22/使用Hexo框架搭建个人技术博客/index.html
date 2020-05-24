@@ -45,11 +45,10 @@
 <meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.8.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.7.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.2.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.4.png">
 <meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.3.png">
 <meta property="article:published_time" content="2020-05-21T17:58:21.000Z">
-<meta property="article:modified_time" content="2020-05-24T20:17:18.964Z">
+<meta property="article:modified_time" content="2020-05-24T22:14:39.656Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="yilia主题">
@@ -123,9 +122,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+					<a class="qq" target="_blank" href="/1186899109" title="qq"><i class="icon-qq"></i></a>
 		        
 					<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 		        
@@ -166,9 +163,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="/" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="qq" target="_blank" href="#" title="qq"><i class="icon-qq"></i></a>
+						<a class="qq" target="_blank" href="/1186899109" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="weixin" target="_blank" href="#" title="weixin"><i class="icon-weixin"></i></a>
 			        
@@ -268,8 +263,7 @@
 <h2 id="第七章-Hexo博客优化问题"><a href="#第七章-Hexo博客优化问题" class="headerlink" title="第七章 Hexo博客优化问题"></a>第七章 Hexo博客优化问题</h2><blockquote>
 <ul>
 <li><strong>文章置顶</strong><br>&emsp;&emsp;实现原理：<strong>在Hexo生成首页HTML时，将top值高的文章排在前面，达到置顶功能</strong><br>&emsp;&emsp;修改<code>/bolg/node_modules/hexo-generator-index/lib/generator.js</code>,添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">posts.data &#x3D; posts.data.sort(function(a, b) &#123;</span><br><span class="line">   if(a.top &amp;&amp; b.top) &#123; &#x2F;&#x2F; 两篇文章top都有定义</span><br><span class="line">       if(a.top &#x3D;&#x3D; b.top) return b.date - a.date; &#x2F;&#x2F; 若top值一样则按照文章日期降序排</span><br><span class="line">       else return b.top - a.top; &#x2F;&#x2F; 否则按照top值降序排</span><br><span class="line">   &#125;</span><br><span class="line">   else if(a.top &amp;&amp; !b.top) &#123; &#x2F;&#x2F; 以下是只有一篇文章top有定义，那么将有top的排在前面</span><br><span class="line">       return -1;</span><br><span class="line">   &#125;</span><br><span class="line">   else if(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">       return 1;</span><br><span class="line">   &#125;</span><br><span class="line">   else return b.date - a.date; &#x2F;&#x2F; 都没定义按照文章日期降序排</span><br><span class="line">&#125;); </span><br></pre></td></tr></table></figure>
-<img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.1.png" alt><br>&emsp;&emsp;要达到最终的<strong>标签</strong>效果，还需要在<code>/blog/themes/yilia/next/layout/post.ejs</code>,使用不同主题路径可能会有所不同。添加如下代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">   &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">   &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span><br><span class="line">   &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">&#123;% endif %&#125; </span><br></pre></td></tr></table></figure>
-<img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.2.png" alt><br>&emsp;&emsp;要给文章置顶时，还需在文章的<code>Front-matter</code>中加上<code>top: true</code>。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.4.png" alt><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.3.png" alt></li>
+<img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.1.png" alt><br>&emsp;&emsp;要给文章置顶时，还需在文章的<code>Front-matter</code>中加上<code>top: true</code>。<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.4.png" alt><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.3.png" alt></li>
 </ul>
 </blockquote>
 </blockquote>
@@ -431,11 +425,7 @@
 
 
 
-{% if post.top %}
-    <i class="fa fa-thumb-tack"></i>
-    <font color=7D26CD>置顶</font>
-    <span class="post-meta-divider">|</span>
-{% endif %}
+
           </div>
         </div>
       </div>

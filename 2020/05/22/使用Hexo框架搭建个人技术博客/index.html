@@ -5,60 +5,62 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>使用Hexo框架搭建个人技术博客 | MoonBird博客</title>
+  <link rel="dns-prefetch" href="https://moguangpeng998.github.io">
+  <title>使用Hexo框架搭建个人技术博客（持续更新） | MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="*特别注意：本篇文章所有的终端命令输入截图均在Windows终端操作，与Linux和Mac等终端输入命令会有所区别（在相关章节会给出相关环境下的命令）！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Hexo框架搭建个人技术博客">
-<meta property="og:url" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="使用Hexo框架搭建个人技术博客（持续更新）">
+<meta property="og:url" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="MoonBird博客">
 <meta property="og:description" content="*特别注意：本篇文章所有的终端命令输入截图均在Windows终端操作，与Linux和Mac等终端输入命令会有所区别（在相关章节会给出相关环境下的命令）！">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.1.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.2.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.2.1.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.3.1.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.1.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.2.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.2.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.4.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.5.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.6.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.2.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.3.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.2.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.5.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.6.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.7.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.1.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.2.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.2.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.3.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.4.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.5.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.6.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.8.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.7.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.1.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.4.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.3.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.5.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.6.png">
-<meta property="og:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.7.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.1.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.2.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.2.1.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.3.1.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.1.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.2.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.3.2.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.4.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.5.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%BA%8C%E7%AB%A0/2.6.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.2.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.2.3.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.4.2.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.5.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.6.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.7.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.1.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%9B%9B%E7%AB%A0/4.2.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.2.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.3.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.4.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.5.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.6.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.8.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E5%85%AD%E7%AB%A0/6.7.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.1.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.4.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.3.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.5.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.6.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.7.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.8.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.9.png">
 <meta property="article:published_time" content="2020-05-21T17:58:21.000Z">
-<meta property="article:modified_time" content="2020-05-31T23:28:07.062Z">
+<meta property="article:modified_time" content="2020-05-31T23:35:35.959Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="Hexo框架">
 <meta property="article:tag" content="yilia主题">
 <meta property="article:tag" content="Hexo博客优化">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.1.1.png">
+<meta name="twitter:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%80%E7%AB%A0/1.1.1.1.png">
   
     <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
@@ -201,7 +203,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      使用Hexo框架搭建个人技术博客
+      使用Hexo框架搭建个人技术博客（持续更新）
     </h1>
   
 
@@ -269,7 +271,7 @@
 &emsp;&emsp;<strong>2.添加样式</strong><br>&emsp;&emsp;创建新文件<code>/bolg/themes/yilia/source-src/css/declare.scss</code>，添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.declare &#123;</span><br><span class="line">   background-color: #eaeaea;</span><br><span class="line">   margin-top: 2em;</span><br><span class="line">   border-left: 3px solid #ff1700;</span><br><span class="line">   padding: .5em 1em;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 &emsp;&emsp;打开<code>/bolg/themes/yilia/source-src/css/main.scss</code>，添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;.&#x2F;declare&quot;; </span><br></pre></td></tr></table></figure>
 &emsp;&emsp;<strong>3.修改配置文件</strong><br>&emsp;&emsp;打开<code>/bolg/themes/yilia/_config.yml</code><br>&emsp;&emsp;添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 版权声明</span><br><span class="line">#在需要进行版权声明的文章的md文件头部，设置属性declare: true。</span><br><span class="line">#版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明</span><br><span class="line">declare_type: 2</span><br><span class="line">licensee_url: https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;        #当前应用的版权协议地址。</span><br><span class="line">licensee_name: &#39;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&#39;        #版权协议的名称</span><br><span class="line">licensee_img: https:&#x2F;&#x2F;i.creativecommons.org&#x2F;l&#x2F;by-nc-sa&#x2F;4.0&#x2F;88x31.png    #版权协议的Logo </span><br></pre></td></tr></table></figure>
-&emsp;&emsp;<em>*可能出现问题，</em></li>
+&emsp;&emsp;<em>*可能出现问题：版权声明中的<strong>文章链接</strong>可能显示不正确，出现如下图情况，很明显显示的链接不是本文链接：</em><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.8.png" alt><br>&emsp;&emsp;可以修改<code>/bolg/_config.yml</code>中的<code>url</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.9.png" alt></li>
 </ul>
 </blockquote>
 </blockquote>
@@ -286,7 +288,7 @@
     
     <br>
     <strong>本文链接：</strong>
-    <a href="http://yoursite.com/2020/05/22/使用Hexo框架搭建个人技术博客/" title="使用Hexo框架搭建个人技术博客" target="_blank">http://yoursite.com/2020/05/22/使用Hexo框架搭建个人技术博客/</a>
+    <a href="https://moguangpeng998.github.io/2020/05/22/使用Hexo框架搭建个人技术博客/" title="使用Hexo框架搭建个人技术博客（持续更新）" target="_blank">https://moguangpeng998.github.io/2020/05/22/使用Hexo框架搭建个人技术博客/</a>
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -398,7 +400,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 

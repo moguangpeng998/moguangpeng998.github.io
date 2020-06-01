@@ -52,8 +52,9 @@
 <meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.7.png">
 <meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.8.png">
 <meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.9.png">
+<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.10.png">
 <meta property="article:published_time" content="2020-05-21T17:58:21.000Z">
-<meta property="article:modified_time" content="2020-05-31T23:35:35.959Z">
+<meta property="article:modified_time" content="2020-05-31T23:39:11.064Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="博客">
 <meta property="article:tag" content="Hexo框架">
@@ -271,11 +272,11 @@
 &emsp;&emsp;<strong>2.添加样式</strong><br>&emsp;&emsp;创建新文件<code>/bolg/themes/yilia/source-src/css/declare.scss</code>，添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.declare &#123;</span><br><span class="line">   background-color: #eaeaea;</span><br><span class="line">   margin-top: 2em;</span><br><span class="line">   border-left: 3px solid #ff1700;</span><br><span class="line">   padding: .5em 1em;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 &emsp;&emsp;打开<code>/bolg/themes/yilia/source-src/css/main.scss</code>，添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@import &quot;.&#x2F;declare&quot;; </span><br></pre></td></tr></table></figure>
 &emsp;&emsp;<strong>3.修改配置文件</strong><br>&emsp;&emsp;打开<code>/bolg/themes/yilia/_config.yml</code><br>&emsp;&emsp;添加如下代码：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 版权声明</span><br><span class="line">#在需要进行版权声明的文章的md文件头部，设置属性declare: true。</span><br><span class="line">#版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明</span><br><span class="line">declare_type: 2</span><br><span class="line">licensee_url: https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;        #当前应用的版权协议地址。</span><br><span class="line">licensee_name: &#39;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&#39;        #版权协议的名称</span><br><span class="line">licensee_img: https:&#x2F;&#x2F;i.creativecommons.org&#x2F;l&#x2F;by-nc-sa&#x2F;4.0&#x2F;88x31.png    #版权协议的Logo </span><br></pre></td></tr></table></figure>
-&emsp;&emsp;<em>*可能出现问题：版权声明中的<strong>文章链接</strong>可能显示不正确，出现如下图情况，很明显显示的链接不是本文链接：</em><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.8.png" alt><br>&emsp;&emsp;可以修改<code>/bolg/_config.yml</code>中的<code>url</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.9.png" alt></li>
+&emsp;&emsp;<em>*可能出现问题：版权声明中的<strong>文章链接</strong>可能显示不正确，出现如下图情况，很明显显示的链接不是本文链接：</em><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.8.png" alt><br>&emsp;&emsp;可以修改<code>/bolg/_config.yml</code>中的<code>url</code><br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.9.png" alt><br>&emsp;&emsp;修改后效果如图：<br><img src="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%83%E7%AB%A0/7.10.png" alt></li>
 </ul>
 </blockquote>
 </blockquote>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>&emsp;&emsp;<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br>&emsp;&emsp;<a href="https://www.jianshu.com/p/950f8f13a36c" target="_blank" rel="noopener">hexo博客图片问题</a><br>&emsp;&emsp;<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子|不如</a><br>&emsp;&emsp;<a href="https://www.jianshu.com/p/42a4efcdf8d7" target="_blank" rel="noopener">解决Hexo博客文章置顶问题</a><br>&emsp;&emsp;<a href="https://blog.csdn.net/qwerty200696/article/details/79010629?ops_request_misc=&request_id=&biz_id=102&utm_term=Hexo%E7%BD%AE%E9%A1%B6&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-79010629" target="_blank" rel="noopener">hexo博客优化之文章置顶+置顶标签</a></p>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>&emsp;&emsp;<a href="https://www.bilibili.com/video/BV1Yb411a7ty" target="_blank" rel="noopener">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo</a><br>&emsp;&emsp;<a href="https://www.jianshu.com/p/950f8f13a36c" target="_blank" rel="noopener">hexo博客图片问题</a><br>&emsp;&emsp;<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">不蒜子|不如</a><br>&emsp;&emsp;<a href="https://www.jianshu.com/p/42a4efcdf8d7" target="_blank" rel="noopener">解决Hexo博客文章置顶问题</a><br>&emsp;&emsp;<a href="https://blog.csdn.net/qwerty200696/article/details/79010629?ops_request_misc=&request_id=&biz_id=102&utm_term=Hexo%E7%BD%AE%E9%A1%B6&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-79010629" target="_blank" rel="noopener">hexo博客优化之文章置顶+置顶标签</a><br>&emsp;&emsp;<a href="https://blog.zscself.com/posts/ee4d9ecb/" target="_blank" rel="noopener">在Hexo中自动为Yilia主题增加版权声明</a></p>
 
       
       
@@ -583,19 +584,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">云服务器ECS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Hexo框架</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">云服务器ECS</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -612,6 +609,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Hexo博客优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>

@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png">
 <meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png">
 <meta property="article:published_time" content="2020-05-25T21:29:53.000Z">
-<meta property="article:modified_time" content="2020-06-10T01:01:31.870Z">
+<meta property="article:modified_time" content="2020-06-10T04:55:51.551Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="云服务器ECS">
@@ -196,7 +196,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">2.3k字</span>
+        <span class="post-count">2.4k字</span>
       </span>
     </span>
 
@@ -280,7 +280,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd git </span><br></pre></td></tr></table></figure>
 <h4 id="6-给git用户配置ssh免密公钥登录"><a href="#6-给git用户配置ssh免密公钥登录" class="headerlink" title="6.给git用户配置ssh免密公钥登录"></a>6.给git用户配置ssh免密公钥登录</h4><p>&emsp;&emsp;使用git用户免密登录阿里云服务器的原理是：通过本地计算机生成一个公钥文件和一个秘钥文件，然后使用FTP工具将公钥文件上传给阿里云服务器，并将公钥安装<code>authorized_keys</code>列表中（即将公钥文件的内容拷贝到<code>authorized_keys</code>文件中）。完成这些操作后本地计算机可以通过ssh方式免密连接阿里云服务器了。<br>&emsp;&emsp;6.1在服务器端将登录用户切换成git用户，并且在<code>~</code>目录（根目录）下创建<code>.ssh</code>文件夹，用来存放公钥文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">su git</span><br><span class="line">cd ~</span><br><span class="line">mkdir .ssh </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;6.2在本地计算机右键打开<strong>GitBash</strong>，通过下面命令在本地生成公钥/私钥对</p>
+<p>&emsp;&emsp;6.2在本地计算机桌面右键打开<strong>GitBash</strong>，通过下面命令在本地生成公钥/私钥对</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir .ssh</span><br><span class="line">cd .ssh</span><br><span class="line">ssh-keygen </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;如果碰见系统询问直接按回车键即可。之后在本地计算机的用户根目录(C:\User\用户名)下会生成一个隐藏的.ssh文件夹，打开会看见两个文件，分别是：id_rsa(私钥)和id_rsa.pub(公钥)。<br>&emsp;&emsp;6.3在本地计算机上给私钥设置权限</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;id_rsa </span><br></pre></td></tr></table></figure>
@@ -615,15 +615,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">主题个性化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
               </li>
              
               <li class="article-tag-list-item">

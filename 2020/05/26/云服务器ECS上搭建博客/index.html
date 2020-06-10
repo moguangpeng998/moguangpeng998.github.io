@@ -5,30 +5,30 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://moguangpeng998.github.io">
+  <link rel="dns-prefetch" href="localhost">
   <title>云服务器ECS上搭建博客（未完成） | MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一、前言*本篇文章将记录博主本人初次在ESC上部署Hexo博客。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="云服务器ECS上搭建博客（未完成）">
-<meta property="og:url" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:url" content="localhost/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="MoonBird博客">
 <meta property="og:description" content="一、前言*本篇文章将记录博主本人初次在ESC上部署Hexo博客。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/12.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png">
-<meta property="og:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/12.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png">
 <meta property="article:published_time" content="2020-05-25T21:29:53.000Z">
 <meta property="article:modified_time" content="2020-06-10T04:55:51.551Z">
 <meta property="article:author" content="MoonBird">
@@ -36,7 +36,7 @@
 <meta property="article:tag" content="云服务器ECS">
 <meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
+<meta name="twitter:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
   
     <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
@@ -236,9 +236,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local</span><br><span class="line">mv nginx-1.18.0&#x2F; nginx&#x2F; </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;1.5进入nginx目录,该目录下有一个configure文件，执行该配置文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd nginx&#x2F;</span><br><span class="line">ls</span><br><span class="line">.&#x2F;configure </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png" alt><br>&emsp;&emsp;1.6编译并安装nginx</p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png" alt><br>&emsp;&emsp;1.6编译并安装nginx</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;<strong>*执行make可能会出现的问题：</strong><br>&emsp;&emsp;<strong>问题一</strong>：<code>nginx安装时/ngx_murmurhash.c:37:11: error: this statement may fall through [-Werror=implicit-fallthroug</code>错误。<br>&emsp;&emsp;分析原因：编译器将警告当成错误处理。<br>&emsp;&emsp;解决方法：打开nginx的安装目录下<code>/objs/Makefile</code>，去掉<code>CFLAGS</code>中的<code>-Werror</code>，再重新make。<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png" alt><br>&emsp;&emsp;<em>-wall 表示打开gcc的所有警告</em><br>&emsp;&emsp;<em>-Werror 它要求gcc将所有警告当成错误进行处理</em><br>&emsp;&emsp;<strong>问题二</strong>：<code>nginx安装时 ‘struct crypt_data’ has no member named ‘cur                  rent_salt’</code>错误。<br>&emsp;&emsp;分析原因：可能是CentOS8版本和Nginx版本问题（不清楚）。<br>&emsp;&emsp;解决方法一：更换Nginx稳定版本（实测未解决，网上有人可以）。<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png" alt><br>&emsp;&emsp;解决方法二：把服务器系统换成CenTOS7（实测有效）。<br>&emsp;&emsp;<strong>*执行make install可能会出现的问题</strong>(先执行后面的操作，如果能成功启动nginx，则可以忽略)：<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png" alt><br>&emsp;&emsp;1.7查找nginx安装目录</p>
+<p>&emsp;&emsp;<strong>*执行make可能会出现的问题：</strong><br>&emsp;&emsp;<strong>问题一</strong>：<code>nginx安装时/ngx_murmurhash.c:37:11: error: this statement may fall through [-Werror=implicit-fallthroug</code>错误。<br>&emsp;&emsp;分析原因：编译器将警告当成错误处理。<br>&emsp;&emsp;解决方法：打开nginx的安装目录下<code>/objs/Makefile</code>，去掉<code>CFLAGS</code>中的<code>-Werror</code>，再重新make。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png" alt><br>&emsp;&emsp;<em>-wall 表示打开gcc的所有警告</em><br>&emsp;&emsp;<em>-Werror 它要求gcc将所有警告当成错误进行处理</em><br>&emsp;&emsp;<strong>问题二</strong>：<code>nginx安装时 ‘struct crypt_data’ has no member named ‘cur                  rent_salt’</code>错误。<br>&emsp;&emsp;分析原因：可能是CentOS8版本和Nginx版本问题（不清楚）。<br>&emsp;&emsp;解决方法一：更换Nginx稳定版本（实测未解决，网上有人可以）。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png" alt><br>&emsp;&emsp;解决方法二：把服务器系统换成CenTOS7（实测有效）。<br>&emsp;&emsp;<strong>*执行make install可能会出现的问题</strong>(先执行后面的操作，如果能成功启动nginx，则可以忽略)：<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png" alt><br>&emsp;&emsp;1.7查找nginx安装目录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis nginx </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;1.8进入nginx安装目录，nginx默认通过80端口访问，开放linux的80端口供外部访问：<br>&emsp;&emsp;查看防火墙状态,如果没有开启就开启防火墙</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --state </span><br></pre></td></tr></table></figure>
@@ -246,20 +246,20 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br><span class="line">systemctl start firewalld.service </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;查看开放端口的情况,<code>services: dhcpv6-client ssh</code> 表示 ssh 服务是放行的，而 <code>ports:</code>为空，表示无端口号放行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --list-all </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png" alt><br>&emsp;&emsp;通过下面命令开放<code>http``80</code>端口,命令末尾<code>--permanent</code>表示永久有效，不加这句的话重启后刚才开放的端口失效</p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png" alt><br>&emsp;&emsp;通过下面命令开放<code>http``80</code>端口,命令末尾<code>--permanent</code>表示永久有效，不加这句的话重启后刚才开放的端口失效</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --add-service&#x3D;http --permanent</span><br><span class="line">sudo firewall-cmd --add-port&#x3D;80&#x2F;tcp --permanent </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;重启防火墙</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --reload </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;再次查看端口状态</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --list-all </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png" alt><br>&emsp;&emsp;1.9在阿里云开放80端口，阿里云默认禁止80端口访问权限，需要手动添加安全组，让阿里云给相应的端口放行，如果不做这一步配置，无法通过“公网IP+端口”的方式访问服务器。<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png" alt><br>&emsp;&emsp;1.10启动nginx,进入nginx目录下的/sbin目录</p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png" alt><br>&emsp;&emsp;1.9在阿里云开放80端口，阿里云默认禁止80端口访问权限，需要手动添加安全组，让阿里云给相应的端口放行，如果不做这一步配置，无法通过“公网IP+端口”的方式访问服务器。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png" alt><br>&emsp;&emsp;1.10启动nginx,进入nginx目录下的/sbin目录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;nginx </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;如果没有任何消息，代表启动成功。此时，可以通过“公网IP+端口”的方式访问<code>http://xx.xx.xxx.xxx:80</code>进入nginx欢迎页面，如图：<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png" alt><br>&emsp;&emsp;<em>*可以使用以下命令停止nginx服务</em></p>
+<p>&emsp;&emsp;如果没有任何消息，代表启动成功。此时，可以通过“公网IP+端口”的方式访问<code>http://xx.xx.xxx.xxx:80</code>进入nginx欢迎页面，如图：<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png" alt><br>&emsp;&emsp;<em>*可以使用以下命令停止nginx服务</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;nginx -s stop </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;<strong>*启动nginx可能出现的问题：</strong><br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png" alt><br>&emsp;&emsp;原因：缺少相关的目录或文件<br>&emsp;&emsp;解决方法：创建相关目录或文件</p>
+<p>&emsp;&emsp;<strong>*启动nginx可能出现的问题：</strong><br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png" alt><br>&emsp;&emsp;原因：缺少相关的目录或文件<br>&emsp;&emsp;解决方法：创建相关目录或文件</p>
 <h4 id="2-配置nginx服务器路由"><a href="#2-配置nginx服务器路由" class="headerlink" title="2.配置nginx服务器路由"></a>2.配置nginx服务器路由</h4><p>&emsp;&emsp;2.1为Hexo创建一个部署目录<code>/home/www/hexo</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;2.2进入<code>/usr/local/nginx/conf</code>,打开目录下的<code>nginx.conf</code>配置文件<br>&emsp;&emsp;①将部署更目录（root）修改成<code>/home/www/hexo</code>；②将域名（server_name）修改成moonbird.top；③检查监听端口（listen）的系统默认值是否为80。<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png" alt></p>
+<p>&emsp;&emsp;2.2进入<code>/usr/local/nginx/conf</code>,打开目录下的<code>nginx.conf</code>配置文件<br>&emsp;&emsp;①将部署更目录（root）修改成<code>/home/www/hexo</code>；②将域名（server_name）修改成moonbird.top；③检查监听端口（listen）的系统默认值是否为80。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png" alt></p>
 <h4 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h4><p>&emsp;&emsp;3.1安装node.js在根目录下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">curl -sL https:&#x2F;&#x2F;rpm.nodesource.com&#x2F;setup_10.x | bash -</span><br><span class="line">yum install -y nodejs </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;3.2检查安装是否成功，能打印版本号即为安装成功</p>
@@ -284,7 +284,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">mkdir .ssh</span><br><span class="line">cd .ssh</span><br><span class="line">ssh-keygen </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;如果碰见系统询问直接按回车键即可。之后在本地计算机的用户根目录(C:\User\用户名)下会生成一个隐藏的.ssh文件夹，打开会看见两个文件，分别是：id_rsa(私钥)和id_rsa.pub(公钥)。<br>&emsp;&emsp;6.3在本地计算机上给私钥设置权限</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;id_rsa </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png" alt><br>&emsp;&emsp;将本地计算机生成的公钥通过FTP工具上传到服务器的<code>~/.ssh</code>目录下,(注意：这里一定要用git账户连接服务器，如果用root用户则目录是<code>/home/git/.ssh</code>)。<br><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/12.png" alt><br>&emsp;&emsp;6.4将本地计算机生成的公钥上传到服务器的<del>/.ssh目录下。<br>&emsp;&emsp;6.5上传完切回服务器端，继续以git用户身份进入服务器的`</del>/.ssh`目录，新建一个authorized_keys文件，并将公钥的内容拷贝到该文件中。（该步骤可以用命令操作，也可用xftp工具复制）</p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/11.png" alt><br>&emsp;&emsp;将本地计算机生成的公钥通过FTP工具上传到服务器的<code>~/.ssh</code>目录下,(注意：这里一定要用git账户连接服务器，如果用root用户则目录是<code>/home/git/.ssh</code>)。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/12.png" alt><br>&emsp;&emsp;6.4将本地计算机生成的公钥上传到服务器的<del>/.ssh目录下。<br>&emsp;&emsp;6.5上传完切回服务器端，继续以git用户身份进入服务器的`</del>/.ssh`目录，新建一个authorized_keys文件，并将公钥的内容拷贝到该文件中。（该步骤可以用命令操作，也可用xftp工具复制）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;.ssh</span><br><span class="line">cp id_rsa.pub authorized_keys</span><br><span class="line">cat id_rsa.pub &gt;&gt; ~&#x2F;.ssh&#x2F;authorized_keys </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;6.6在服务器上设置文件权限</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;authorized_keys</span><br><span class="line">chmod 700 ~&#x2F;.ssh </span><br></pre></td></tr></table></figure>
@@ -292,7 +292,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">restorecon -Rv ~&#x2F;.ssh </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;6.8在本地计算机使用ssh方式连接阿里云服务器,提示输入yes即可</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh git@xxx.xxx.xxx.xxx（阿里云公网IP） </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png" alt></p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png" alt></p>
 <h4 id="7-配置Git仓库"><a href="#7-配置Git仓库" class="headerlink" title="7.配置Git仓库"></a>7.配置Git仓库</h4><p>&emsp;&emsp;7.1在服务器上使用git用户创建一个Git仓库，并且在该仓库中新建一个<code>post-receive</code>钩子文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">git init --bare hexo.git</span><br><span class="line">vi ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;7.2在钩子文件中输入<code>git --work-tree=/home/www/hexo --git-dir=/home/git/hexo.git checkout -f</code>，即让钩子文件删除<code>/home/www/hexo</code>目录下原有的文件，然后从bolg.git仓库clone新的博客静态文件到<code>/home/www/hexo</code>中。<br>&emsp;&emsp;7.3授予钩子文件可执行权限</p>
@@ -306,7 +306,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-server </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;备注：第一个插件作用是使用Git自动部署，第二个插件作用是hexo本地简单的服务器。</p>
 <h4 id="3-在本地计算机配置Git全局变量"><a href="#3-在本地计算机配置Git全局变量" class="headerlink" title="3.在本地计算机配置Git全局变量"></a>3.在本地计算机配置Git全局变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;xxxxxxxxx@qq.com&quot;</span><br><span class="line">git config --global user.name &quot;xxxxxxxxx&quot; </span><br></pre></td></tr></table></figure>
-<p><img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png" alt></p>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png" alt></p>
 <h4 id="4-使用Hexo生成、发布博客"><a href="#4-使用Hexo生成、发布博客" class="headerlink" title="4.使用Hexo生成、发布博客"></a>4.使用Hexo生成、发布博客</h4><p>&emsp;&emsp;在博客根目录下执行以下命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;执行<code>hexo deploy</code>可能会提示输入密码，如果驶入git用户密码提示没有权限，。</p>
@@ -324,7 +324,7 @@
     
     <br>
     <strong>本文链接：</strong>
-    <a href="https://moguangpeng998.github.io/2020/05/26/云服务器ECS上搭建博客/" title="云服务器ECS上搭建博客（未完成）" target="_blank">https://moguangpeng998.github.io/2020/05/26/云服务器ECS上搭建博客/</a>
+    <a href="localhost/2020/05/26/云服务器ECS上搭建博客/" title="云服务器ECS上搭建博客（未完成）" target="_blank">localhost/2020/05/26/云服务器ECS上搭建博客/</a>
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -411,7 +411,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://moguangpeng998.github.io/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:localhost/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -615,10 +615,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
@@ -627,7 +623,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Markdown语法</a>
+                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -635,7 +631,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
+                <a href="javascript:void(0)" class="js-tag color1">Markdown语法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -644,6 +640,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
               </li>
              
               <li class="article-tag-list-item">

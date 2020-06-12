@@ -27,7 +27,7 @@
 <meta property="og:image" content="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/10.png">
 <meta property="og:image" content="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/11.png">
 <meta property="article:published_time" content="2020-05-25T21:29:53.000Z">
-<meta property="article:modified_time" content="2020-06-12T11:25:16.501Z">
+<meta property="article:modified_time" content="2020-06-12T23:08:23.891Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="云服务器ECS">
@@ -223,7 +223,7 @@
 <h4 id="2-在本地计算机搭建Hexo博客"><a href="#2-在本地计算机搭建Hexo博客" class="headerlink" title="2.在本地计算机搭建Hexo博客"></a>2.在本地计算机搭建Hexo博客</h4><p>&emsp;&emsp;具体操作参考我的另一篇博客前两章【<a href="/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A5%E9%97%A8/" title="Hexo博客搭建入门">Hexo博客搭建入门</a>】。</p>
 </blockquote>
 <h2 id="三、Hexo博客部署到阿里云"><a href="#三、Hexo博客部署到阿里云" class="headerlink" title="三、Hexo博客部署到阿里云"></a>三、Hexo博客部署到阿里云</h2><blockquote>
-<h4 id="1-安装nginx"><a href="#1-安装nginx" class="headerlink" title="1.安装nginx"></a>1.安装nginx</h4><p>&emsp;&emsp;1.1安装nginx依赖环境，安装期间提示一律选yes</p>
+<h4 id="1-安装nginx"><a href="#1-安装nginx" class="headerlink" title="1.安装nginx"></a>1.安装nginx</h4><p>&emsp;&emsp;1.1使用PuTTY连接服务器，执行以下命令安装nginx依赖环境，安装期间提示一律选yes。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br><span class="line">yum install -y pcre pcre-devel</span><br><span class="line">yum install -y zlib zlib-devel</span><br><span class="line">yum install -y openssl openssl-devel </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;1.2下载nginx安装包，注意版本，最好选择稳定版，可以去<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">nginx</a>官网查看最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -c https:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.18.0.tar.gz </span><br></pre></td></tr></table></figure>
@@ -271,7 +271,9 @@
 <p>&emsp;&emsp;原因：缺少相关的目录或文件<br>&emsp;&emsp;解决方法：创建相关目录或文件</p>
 <h4 id="2-配置nginx服务器路由"><a href="#2-配置nginx服务器路由" class="headerlink" title="2.配置nginx服务器路由"></a>2.配置nginx服务器路由</h4><p>&emsp;&emsp;2.1为Hexo创建一个部署目录<code>/home/www/hexo</code></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;2.2进入<code>/usr/local/nginx/conf</code>，在该目录下创建一个文件夹<code>vhost</code>，进入<code>/vhost</code>中并创建<code>blog.conf</code>文件，添加如下内容，保存并退出:</p>
+<p>&emsp;&emsp;2.2进入<code>/usr/local/nginx/conf</code>，在该目录下创建一个文件夹<code>vhost</code>，进入<code>/vhost</code>中并创建<code>blog.conf</code>文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;usr.local.nginx&#x2F;conf</span><br><span class="line">mkdir vhost</span><br><span class="line">cd vhost</span><br><span class="line">vim blog.conf </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;在<code>blog.conf</code>文件中添加如下内容，保存并退出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">listen    80;</span><br><span class="line">root &#x2F;home&#x2F;www&#x2F;hexo;这里填博客目录存放的地址(即2.1创建的部署目录)</span><br><span class="line">server_name 这里填域名如(www.baidu.com) 如果暂时没有域名就填阿里云的公网ip，以后有了再改回来;</span><br><span class="line">location &#x2F;&#123;</span><br><span class="line">&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;打开<code>/usr/local/nginx/conf/nginx.conf</code>配置文件，在相应位置include刚才创建的*.conf文件。</p>
 <img src="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/10.png" class>
@@ -301,15 +303,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp id_rsa.pub authorized_keys </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;6.4修改相关权限</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;authorized_keys </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;6.5在本地计算机打开命令行终端，输入以下命令通过ssh方式连接云服务器，提示输入yes即可，最后提示<code>Welcome to Alibaba Cloud Elastic Compute Service !</code>代表成功登陆。</p>
+<p>&emsp;&emsp;6.5在本地计算机打开命令行终端，输入以下命令通过ssh方式连接云服务器，首次连接会提示输入yes即可，最后提示<code>Welcome to Alibaba Cloud Elastic Compute Service !</code>代表成功登陆。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -v git@云服务器公网IP </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;6.6确保设置了正确的SELinux上下文</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">restorecon -Rv ~&#x2F;.ssh </span><br></pre></td></tr></table></figure>
 <h4 id="7-配置Git仓库"><a href="#7-配置Git仓库" class="headerlink" title="7.配置Git仓库"></a>7.配置Git仓库</h4><p>&emsp;&emsp;7.1在服务器上使用git用户创建一个Git仓库，并且在该仓库中新建一个<code>post-receive</code>钩子文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">git init --bare hexo.git</span><br><span class="line">vi ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;7.2在钩子文件中输入<code>git --work-tree=/home/www/hexo --git-dir=/home/git/hexo.git checkout -f</code>，即让钩子文件删除<code>/home/www/hexo</code>目录下原有的文件，然后从bolg.git仓库clone新的博客静态文件到<code>/home/www/hexo</code>中。<br>&emsp;&emsp;7.3授予钩子文件可执行权限</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive</span><br><span class="line">sudo chmod -R 777 &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;7.4重启ECS服务器实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;7.4返回根目录给前面创建的<code>/home/www/hexo</code>目录授权</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod -R 777 &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;7.5重启ECS服务器实例</p>
 </blockquote>
 <h2 id="四、客户端hexo配置"><a href="#四、客户端hexo配置" class="headerlink" title="四、客户端hexo配置"></a>四、客户端hexo配置</h2><blockquote>
 <h4 id="1-修改博客根目录的-config-yml文件"><a href="#1-修改博客根目录的-config-yml文件" class="headerlink" title="1.修改博客根目录的_config.yml文件"></a>1.修改博客根目录的_config.yml文件</h4><p>&emsp;&emsp;修改deploy参数：</p>
@@ -521,7 +525,7 @@
 		</span>
 		<i class="fas fa-chart-area"></i>
 		<span class="post-count">
-			总字数统计：10.7k字
+			总字数统计：10.8k字
 			</span>
 	</div>
 	<!-- 根据个人喜好在相应位置添加以上代码 -->
@@ -657,10 +661,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">云服务器ECS</a>
               </li>
              
@@ -670,6 +670,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
               </li>
             
             <div class="clearfix"></div>

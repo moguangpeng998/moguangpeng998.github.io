@@ -30,7 +30,7 @@
 <meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/13.png">
 <meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png">
 <meta property="article:published_time" content="2020-05-25T21:29:53.000Z">
-<meta property="article:modified_time" content="2020-06-11T07:43:23.838Z">
+<meta property="article:modified_time" content="2020-06-12T02:57:22.611Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="云服务器ECS">
@@ -205,7 +205,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">9分</span>
+        <span class="post-count">10分</span>
       </span>
     </span>
 </div>
@@ -222,19 +222,19 @@
         <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p><em>*本篇文章将记录博主本人初次在ESC上部署Hexo博客。</em></p>
 <a id="more"></a>
 <h2 id="二、准备阶段"><a href="#二、准备阶段" class="headerlink" title="二、准备阶段"></a>二、准备阶段</h2><blockquote>
-<h4 id="1-配置云服务器ECS"><a href="#1-配置云服务器ECS" class="headerlink" title="1.配置云服务器ECS"></a>1.配置云服务器ECS</h4><p>&emsp;&emsp;要求完成云服务器的基本配置，并使用PuTTY和FileZilla与云服务器ECS建立连接，具体操作参考我的另一篇关于ECS入门的博客【<a href="/2020/05/25/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E5%85%A5%E9%97%A8/" title="云服务器ECS入门">云服务器ECS入门</a>】,我本次部署的服务器镜像选择centos7.8。</p>
+<h4 id="1-配置云服务器ECS"><a href="#1-配置云服务器ECS" class="headerlink" title="1.配置云服务器ECS"></a>1.配置云服务器ECS</h4><p>&emsp;&emsp;要求完成云服务器的基本配置，并使用PuTTY和FileZilla与云服务器ECS建立连接，具体操作参考我的另一篇关于ECS入门的博客【<a href="/2020/05/25/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E5%85%A5%E9%97%A8/" title="云服务器ECS入门">云服务器ECS入门</a>】,我本次部署的服务器系统镜像选择centos8.0。</p>
 <h4 id="2-在本地计算机安装Hexo环境"><a href="#2-在本地计算机安装Hexo环境" class="headerlink" title="2.在本地计算机安装Hexo环境"></a>2.在本地计算机安装Hexo环境</h4><p>&emsp;&emsp;具体操作参考我的另一篇博客前两章【<a href="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="使用Hexo框架搭建个人技术博客">使用Hexo框架搭建个人技术博客</a>】。</p>
 </blockquote>
 <h2 id="三、Hexo博客部署到阿里云"><a href="#三、Hexo博客部署到阿里云" class="headerlink" title="三、Hexo博客部署到阿里云"></a>三、Hexo博客部署到阿里云</h2><blockquote>
 <h4 id="1-安装nginx"><a href="#1-安装nginx" class="headerlink" title="1.安装nginx"></a>1.安装nginx</h4><p>&emsp;&emsp;1.1安装nginx依赖环境，安装期间提示一律选yes</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br><span class="line">yum install -y pcre pcre-devel</span><br><span class="line">yum install -y zlib zlib-devel</span><br><span class="line">yum install -y openssl openssl-devel </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;1.2下载nginx安装包，注意版本，可以去<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">nginx</a>官网查看最新版本</p>
+<p>&emsp;&emsp;1.2下载nginx安装包，注意版本，最好选择稳定版，可以去<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">nginx</a>官网查看最新版本。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -c https:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.18.0.tar.gz </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;1.3将安装包解压到/usr/local目录下</p>
+<p>&emsp;&emsp;1.3将安装包解压到/usr/local目录下。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf nginx-1.18.0.tar.gz -C &#x2F;usr&#x2F;local </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;1.4进入/usr/local目录,修改nagix目录名称</p>
+<p>&emsp;&emsp;1.4进入/usr/local目录,修改nginx目录名称。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local</span><br><span class="line">mv nginx-1.18.0&#x2F; nginx&#x2F; </span><br></pre></td></tr></table></figure>
-<p>&emsp;&emsp;1.5进入nginx目录,该目录下有一个configure文件，执行该配置文件</p>
+<p>&emsp;&emsp;1.5进入nginx目录,该目录下有一个configure文件，执行该配置文件，./configure脚本做了很多工作，例如环境检测、参数解析、目录生成、Makefile文件的生成等。。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd nginx&#x2F;</span><br><span class="line">ls</span><br><span class="line">.&#x2F;configure </span><br></pre></td></tr></table></figure>
 <p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png" alt><br>&emsp;&emsp;1.6编译并安装nginx</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install </span><br></pre></td></tr></table></figure>
@@ -311,7 +311,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy </span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;执行<code>hexo deploy</code>可能会提示输入密码，如果驶入git用户密码提示没有权限，。</p>
 </blockquote>
-<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p><a href="https://www.cnblogs.com/cnbai/p/12827866.html" target="_blank" rel="noopener">Hexo搭建博客部署到阿里云服务器</a></p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p><a href="https://www.cnblogs.com/cnbai/p/12827866.html" target="_blank" rel="noopener">Hexo搭建博客部署到阿里云服务器</a><br><a href="https://blog.csdn.net/NoCortY/article/details/99631249?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159191458319724839263565%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=159191458319724839263565&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~pc_rank_v3-1-99631249.first_rank_ecpm_v3_pc_rank_v3&utm_term=hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AEnginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B7%AF%E7%94%B1" target="_blank" rel="noopener">从零搭建Hexo博客并部署阿里云服务器（奶妈级教学）</a></p>
 
       
       
@@ -507,7 +507,7 @@
 		</span>
 		<i class="fas fa-chart-area"></i>
 		<span class="post-count">
-			总字数统计：10.2k字
+			总字数统计：10.3k字
 			</span>
 	</div>
 	<!-- 根据个人喜好在相应位置添加以上代码 -->

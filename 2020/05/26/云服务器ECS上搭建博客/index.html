@@ -6,23 +6,34 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="101.37.89.203">
-  <title>测试2 | MoonBird博客</title>
+  <title>云服务器ECS上搭建博客（未完成） | MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="测试2">
-<meta property="og:url" content="101.37.89.203/2020/06/12/%E6%B5%8B%E8%AF%952/index.html">
+  <meta name="description" content="一、前言*本篇文章将记录博主本人初次在ESC上部署Hexo博客。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云服务器ECS上搭建博客（未完成）">
+<meta property="og:url" content="101.37.89.203/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="MoonBird博客">
+<meta property="og:description" content="一、前言*本篇文章将记录博主本人初次在ESC上部署Hexo博客。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="/12/%E6%B5%8B%E8%AF%952/1.png">
-<meta property="article:published_time" content="2020-06-12T05:15:22.000Z">
-<meta property="article:modified_time" content="2020-06-12T05:29:48.600Z">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png">
+<meta property="og:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png">
+<meta property="article:published_time" content="2020-05-25T21:29:53.000Z">
+<meta property="article:modified_time" content="2020-06-12T05:39:17.325Z">
 <meta property="article:author" content="MoonBird">
-<meta property="article:tag" content="后端">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="python">
-<meta property="article:tag" content="机器学习。">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="云服务器ECS">
+<meta property="article:tag" content="nginx">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/12/%E6%B5%8B%E8%AF%952/1.png">
+<meta name="twitter:image" content="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png">
   
     <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
@@ -164,14 +175,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-测试2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-云服务器ECS上搭建博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      测试2
+      云服务器ECS上搭建博客（未完成）
     </h1>
   
 
@@ -182,7 +193,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">0字</span>
+        <span class="post-count">2.3k字</span>
       </span>
     </span>
 
@@ -191,27 +202,135 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">9分</span>
       </span>
     </span>
 </div>
         
         
-        <a href="/2020/06/12/%E6%B5%8B%E8%AF%952/" class="archive-article-date">
-  	<time datetime="2020-06-12T05:15:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-12</time>
+        <a href="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2020-05-25T21:29:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="/12/%E6%B5%8B%E8%AF%952/1.png" alt></p>
+        <h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p><em>*本篇文章将记录博主本人初次在ESC上部署Hexo博客。</em></p>
+<a id="more"></a>
+<h2 id="二、准备阶段"><a href="#二、准备阶段" class="headerlink" title="二、准备阶段"></a>二、准备阶段</h2><blockquote>
+<h4 id="1-配置云服务器ECS"><a href="#1-配置云服务器ECS" class="headerlink" title="1.配置云服务器ECS"></a>1.配置云服务器ECS</h4><p>&emsp;&emsp;要求完成云服务器的基本配置，并使用PuTTY和FileZilla与云服务器ECS建立连接，具体操作参考我的另一篇关于ECS入门的博客【<a href="/2020/05/25/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E5%85%A5%E9%97%A8/" title="云服务器ECS入门">云服务器ECS入门</a>】,我本次部署的服务器系统镜像选择centos8.0。</p>
+<h4 id="2-在本地计算机安装Hexo环境"><a href="#2-在本地计算机安装Hexo环境" class="headerlink" title="2.在本地计算机安装Hexo环境"></a>2.在本地计算机安装Hexo环境</h4><p>&emsp;&emsp;具体操作参考我的另一篇博客前两章【<a href="/2020/05/22/%E4%BD%BF%E7%94%A8Hexo%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" title="使用Hexo框架搭建个人技术博客">使用Hexo框架搭建个人技术博客</a>】。</p>
+</blockquote>
+<h2 id="三、Hexo博客部署到阿里云"><a href="#三、Hexo博客部署到阿里云" class="headerlink" title="三、Hexo博客部署到阿里云"></a>三、Hexo博客部署到阿里云</h2><blockquote>
+<h4 id="1-安装nginx"><a href="#1-安装nginx" class="headerlink" title="1.安装nginx"></a>1.安装nginx</h4><p>&emsp;&emsp;1.1安装nginx依赖环境，安装期间提示一律选yes</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install gcc-c++</span><br><span class="line">yum install -y pcre pcre-devel</span><br><span class="line">yum install -y zlib zlib-devel</span><br><span class="line">yum install -y openssl openssl-devel </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;1.2下载nginx安装包，注意版本，最好选择稳定版，可以去<a href="http://nginx.org/en/download.html" target="_blank" rel="noopener">nginx</a>官网查看最新版本。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -c https:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.18.0.tar.gz </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;1.3将安装包解压到/usr/local目录下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xvf nginx-1.18.0.tar.gz -C &#x2F;usr&#x2F;local </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;1.4进入/usr/local目录,修改nginx目录名称。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;usr&#x2F;local</span><br><span class="line">mv nginx-1.18.0&#x2F; nginx&#x2F; </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;1.5进入nginx目录,该目录下有一个configure文件，执行该配置文件，./configure脚本做了很多工作，例如环境检测、参数解析、目录生成、Makefile文件的生成等。。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd nginx&#x2F;</span><br><span class="line">ls</span><br><span class="line">.&#x2F;configure </span><br></pre></td></tr></table></figure>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/1.png" alt><br>&emsp;&emsp;1.6编译并安装nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">make</span><br><span class="line">make install </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;<strong>*执行make可能会出现的问题：</strong><br>&emsp;&emsp;<strong>问题一</strong>：<code>nginx安装时/ngx_murmurhash.c:37:11: error: this statement may fall through [-Werror=implicit-fallthroug</code>错误。<br>&emsp;&emsp;分析原因：编译器将警告当成错误处理。<br>&emsp;&emsp;解决方法：打开nginx的安装目录下<code>/objs/Makefile</code>，去掉<code>CFLAGS</code>中的<code>-Werror</code>，再重新make。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/2.png" alt><br>&emsp;&emsp;<em>-wall 表示打开gcc的所有警告</em><br>&emsp;&emsp;<em>-Werror 它要求gcc将所有警告当成错误进行处理</em><br>&emsp;&emsp;<strong>问题二</strong>：<code>nginx安装时 ‘struct crypt_data’ has no member named ‘cur                  rent_salt’</code>错误。<br>&emsp;&emsp;分析原因：可能是CentOS8版本和Nginx版本问题（不清楚）。<br>&emsp;&emsp;解决方法一：更换Nginx稳定版本（实测未解决，网上有人可以）。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/3.png" alt><br>&emsp;&emsp;解决方法二：把服务器系统换成CenTOS7（实测有效）。<br>&emsp;&emsp;<strong>*执行make install可能会出现的问题</strong>(先执行后面的操作，如果能成功启动nginx，则可以忽略)。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/4.png" alt><br>&emsp;&emsp;1.7查找nginx安装目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">whereis nginx </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;1.8进入nginx安装目录，nginx默认通过80端口访问，开放linux的80端口供外部访问：<br>&emsp;&emsp;查看防火墙状态,如果没有开启就开启防火墙。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --state </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;关闭与开启防护墙。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service</span><br><span class="line">systemctl start firewalld.service </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;查看开放端口的情况,<code>services: dhcpv6-client ssh</code> 表示 ssh 服务是放行的，而 <code>ports:</code>为空，表示无端口号放行。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --list-all </span><br></pre></td></tr></table></figure>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/5.png" alt><br>&emsp;&emsp;通过下面命令开放<code>http``80</code>端口,命令末尾<code>--permanent</code>表示永久有效，不加这句的话重启后刚才开放的端口失效。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --add-service&#x3D;http --permanent</span><br><span class="line">sudo firewall-cmd --add-port&#x3D;80&#x2F;tcp --permanent </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;重启防火墙</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --reload </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;再次查看端口状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --list-all </span><br></pre></td></tr></table></figure>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/6.png" alt><br>&emsp;&emsp;1.9在阿里云开放80端口，阿里云默认禁止80端口访问权限，需要手动添加安全组，让阿里云给相应的端口放行，如果不做这一步配置，无法通过“公网IP+端口”的方式访问服务器。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/7.png" alt><br>&emsp;&emsp;1.10启动nginx,进入nginx目录下的/sbin目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;nginx </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;如果没有任何消息，代表启动成功。此时，可以通过“公网IP+端口”的方式访问<code>http://xx.xx.xxx.xxx:80</code>进入nginx欢迎页面，如图：<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/8.png" alt><br>&emsp;&emsp;<em>*可以使用以下命令停止nginx服务</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;nginx -s stop </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;<strong>*启动nginx可能出现的问题：</strong><br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/9.png" alt><br>&emsp;&emsp;原因：缺少相关的目录或文件<br>&emsp;&emsp;解决方法：创建相关目录或文件</p>
+<h4 id="2-配置nginx服务器路由"><a href="#2-配置nginx服务器路由" class="headerlink" title="2.配置nginx服务器路由"></a>2.配置nginx服务器路由</h4><p>&emsp;&emsp;2.1为Hexo创建一个部署目录<code>/home/www/hexo</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;2.2进入<code>/usr/local/nginx/conf</code>，在该目录下创建一个文件夹<code>vhost</code>，进入<code>/vhost</code>中并创建<code>blog.conf</code>文件，添加如下内容，保存并退出:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">listen    80;</span><br><span class="line">root &#x2F;home&#x2F;www&#x2F;hexo;这里填博客目录存放的地址(即2.1创建的部署目录)</span><br><span class="line">server_name 这里填域名如(www.baidu.com) 如果暂时没有域名就填阿里云的公网ip，以后有了再改回来;</span><br><span class="line">location &#x2F;&#123;</span><br><span class="line">&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;打开<code>/usr/local/nginx/conf/nginx.conf</code>配置文件，在相应位置include刚才创建的*.conf文件。<br><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/10.png" alt></p>
+<h4 id="3-安装node-js"><a href="#3-安装node-js" class="headerlink" title="3.安装node.js"></a>3.安装node.js</h4><p>&emsp;&emsp;3.1安装node.js在根目录下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">curl -sL https:&#x2F;&#x2F;rpm.nodesource.com&#x2F;setup_10.x | bash -</span><br><span class="line">yum install -y nodejs </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;3.2检查安装是否成功，能打印版本号即为安装成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v </span><br></pre></td></tr></table></figure>
+<h4 id="4-安装Git"><a href="#4-安装Git" class="headerlink" title="4.安装Git"></a>4.安装Git</h4><p>&emsp;&emsp;4.1使用yum命令安装Git，安装期间提示一律选yes</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;4.2检查安装是否成功，能打印版本号即为成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version </span><br></pre></td></tr></table></figure>
+<h4 id="5-创建git用户"><a href="#5-创建git用户" class="headerlink" title="5.创建git用户"></a>5.创建git用户</h4><p>&emsp;&emsp;因为需要实现博客的自动部署，所以后面需要使用公钥免密登录服务器。为了安全起见，最好不要使用root用户免密登录。因此需要创建一个新的git用户，用于远程公钥免密登录服务器。<br>&emsp;&emsp;5.1创建git用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser git </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;5.2修改git用户权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 740 &#x2F;etc&#x2F;sudoers </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;5.3打开<code>/etc/sudoers</code>文件，在<code>root ALL=(ALL) ALL</code>下面添加一行<code>git ALL=(ALL) ALL</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim &#x2F;etc&#x2F;sudoers </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;5.4将权限还原</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 400 &#x2F;etc&#x2F;sudoers </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;5.5设置git用户密码,之后就可以使用git用户远程登录阿里云服务器了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd git </span><br></pre></td></tr></table></figure>
+<h4 id="6-给git用户配置ssh免密公钥登录"><a href="#6-给git用户配置ssh免密公钥登录" class="headerlink" title="6.给git用户配置ssh免密公钥登录"></a>6.给git用户配置ssh免密公钥登录</h4><p>&emsp;&emsp;<strong>使用git用户免密登录阿里云服务器的原理是：通过服务器端生成一个公钥文件和一个秘钥文件，然后使用FTP工具将私钥文件上传给阿里云服务器，并将公钥安装<code>authorized_keys</code>列表中（即将公钥文件的内容拷贝到<code>authorized_keys</code>文件中）。完成这些操作后本地计算机可以通过ssh方式免密连接阿里云服务器了。</strong><br>&emsp;&emsp;6.1在服务器端将登录用户切换成git用户，并且在<code>~</code>目录（根目录）下创建<code>.ssh</code>文件夹，用来存放公钥文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">su git</span><br><span class="line">cd ~</span><br><span class="line">mkdir .ssh </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;6.2进入<code>.ssh</code>目录，通过下面命令在本地生成公钥/私钥对</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">su git</span><br><span class="line">cd ~</span><br><span class="line">cd .ssh</span><br><span class="line">ssh-keygen </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;如果碰见系统询问直接按回车键即可。之后在<code>.ssh</code>目录下会生成两个文件，分别是：id_rsa(私钥)和id_rsa.pub(公钥)。<br>&emsp;&emsp;6.3将id_rsa.pub(公钥文件)复制一份。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp id_rsa.pub authorized_keys </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;6.4修改相关权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 700 ~&#x2F;.ssh</span><br><span class="line">chmod 600 ~&#x2F;.ssh&#x2F;authorized_keys </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;6.5在本地计算机打开命令行终端，输入以下命令通过ssh方式连接云服务器，提示输入yes即可，最后提示<code>Welcome to Alibaba Cloud Elastic Compute Service !</code>代表成功登陆。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -v git@云服务器公网IP </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;6.6确保设置了正确的SELinux上下文</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">restorecon -Rv ~&#x2F;.ssh </span><br></pre></td></tr></table></figure>
+<h4 id="7-配置Git仓库"><a href="#7-配置Git仓库" class="headerlink" title="7.配置Git仓库"></a>7.配置Git仓库</h4><p>&emsp;&emsp;7.1在服务器上使用git用户创建一个Git仓库，并且在该仓库中新建一个<code>post-receive</code>钩子文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">git init --bare hexo.git</span><br><span class="line">vi ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;7.2在钩子文件中输入<code>git --work-tree=/home/www/hexo --git-dir=/home/git/hexo.git checkout -f</code>，即让钩子文件删除<code>/home/www/hexo</code>目录下原有的文件，然后从bolg.git仓库clone新的博客静态文件到<code>/home/www/hexo</code>中。<br>&emsp;&emsp;7.3授予钩子文件可执行权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ~&#x2F;hexo.git&#x2F;hooks&#x2F;post-receive</span><br><span class="line">sudo chmod -R 777 &#x2F;home&#x2F;www&#x2F;hexo </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;7.4重启ECS服务器实例</p>
+</blockquote>
+<h2 id="四、客户端hexo配置"><a href="#四、客户端hexo配置" class="headerlink" title="四、客户端hexo配置"></a>四、客户端hexo配置</h2><blockquote>
+<h4 id="1-修改博客根目录的-config-yml文件"><a href="#1-修改博客根目录的-config-yml文件" class="headerlink" title="1.修改博客根目录的_config.yml文件"></a>1.修改博客根目录的_config.yml文件</h4><p>&emsp;&emsp;修改deploy参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@xxx.xxx.xxx.xxx（阿里云公网IP）:&#x2F;home&#x2F;git&#x2F;hexo.git</span><br><span class="line">branch: master</span><br><span class="line">message: </span><br></pre></td></tr></table></figure>
+<h4 id="2-在本地计算机安装插件：hexo-deployer-git和hexo-server"><a href="#2-在本地计算机安装插件：hexo-deployer-git和hexo-server" class="headerlink" title="2.在本地计算机安装插件：hexo-deployer-git和hexo-server"></a>2.在本地计算机安装插件：hexo-deployer-git和hexo-server</h4><p>&emsp;&emsp;在博客根目录下邮件打开<strong>GitBash</strong>，输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-server </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;备注：第一个插件作用是使用Git自动部署，第二个插件作用是hexo本地简单的服务器。</p>
+<h4 id="3-在本地计算机配置Git全局变量"><a href="#3-在本地计算机配置Git全局变量" class="headerlink" title="3.在本地计算机配置Git全局变量"></a>3.在本地计算机配置Git全局变量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;xxxxxxxxx@qq.com&quot;</span><br><span class="line">git config --global user.name &quot;xxxxxxxxx&quot; </span><br></pre></td></tr></table></figure>
+<p><img src="/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E7%AC%AC%E4%B8%89%E7%AB%A0/14.png" alt></p>
+<h4 id="4-使用Hexo生成、发布博客"><a href="#4-使用Hexo生成、发布博客" class="headerlink" title="4.使用Hexo生成、发布博客"></a>4.使用Hexo生成、发布博客</h4><p>&emsp;&emsp;在博客根目录下执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy </span><br></pre></td></tr></table></figure>
+<p>&emsp;&emsp;执行<code>hexo deploy</code>可能会提示输入git用户密码。</p>
+</blockquote>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p><a href="https://www.cnblogs.com/cnbai/p/12827866.html" target="_blank" rel="noopener">Hexo搭建博客部署到阿里云服务器</a><br><a href="https://blog.csdn.net/NoCortY/article/details/99631249?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159191458319724839263565%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=159191458319724839263565&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~pc_rank_v3-1-99631249.first_rank_ecpm_v3_pc_rank_v3&utm_term=hexo%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AEnginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B7%AF%E7%94%B1" target="_blank" rel="noopener">从零搭建Hexo博客并部署阿里云服务器（奶妈级教学）</a></p>
 
       
       
       
 
-  <div class="declare" hidden="hidden"></div>
+  <div class="declare">
+    <strong>本文作者：</strong>
+    
+      MoonBird
+    
+    <br>
+    <strong>本文链接：</strong>
+    <a href="101.37.89.203/2020/05/26/云服务器ECS上搭建博客/" title="云服务器ECS上搭建博客（未完成）" target="_blank">101.37.89.203/2020/05/26/云服务器ECS上搭建博客/</a>
+    <br>
+    <strong>版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
 
 
       
@@ -219,6 +338,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">云服务器ECS</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">nginx</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -269,7 +407,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:101.37.89.203/2020/06/12/%E6%B5%8B%E8%AF%952/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:101.37.89.203/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -288,9 +426,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/05/26/Markdown%E7%BC%96%E5%86%99Hexo%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E5%9C%A8%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%AD%E9%93%BE%E6%8E%A5%E5%88%B0%E5%8F%A6%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Markdown编写Hexo博客如何在一篇文章中链接到另一篇文章
+        
+      </div>
+    </a>
   
-    <a href="/2020/06/12/%E6%B5%8B%E8%AF%951/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">测试1</div>
+  
+    <a href="/2020/05/25/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E5%85%A5%E9%97%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">云服务器ECS入门</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -309,6 +456,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、前言"><span class="toc-number">1.</span> <span class="toc-text">一、前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、准备阶段"><span class="toc-number">2.</span> <span class="toc-text">二、准备阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-配置云服务器ECS"><span class="toc-number">2.0.1.</span> <span class="toc-text">1.配置云服务器ECS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-在本地计算机安装Hexo环境"><span class="toc-number">2.0.2.</span> <span class="toc-text">2.在本地计算机安装Hexo环境</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、Hexo博客部署到阿里云"><span class="toc-number">3.</span> <span class="toc-text">三、Hexo博客部署到阿里云</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-安装nginx"><span class="toc-number">3.0.1.</span> <span class="toc-text">1.安装nginx</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-配置nginx服务器路由"><span class="toc-number">3.0.2.</span> <span class="toc-text">2.配置nginx服务器路由</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-安装node-js"><span class="toc-number">3.0.3.</span> <span class="toc-text">3.安装node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-安装Git"><span class="toc-number">3.0.4.</span> <span class="toc-text">4.安装Git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-创建git用户"><span class="toc-number">3.0.5.</span> <span class="toc-text">5.创建git用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-给git用户配置ssh免密公钥登录"><span class="toc-number">3.0.6.</span> <span class="toc-text">6.给git用户配置ssh免密公钥登录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-配置Git仓库"><span class="toc-number">3.0.7.</span> <span class="toc-text">7.配置Git仓库</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四、客户端hexo配置"><span class="toc-number">4.</span> <span class="toc-text">四、客户端hexo配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-修改博客根目录的-config-yml文件"><span class="toc-number">4.0.1.</span> <span class="toc-text">1.修改博客根目录的_config.yml文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-在本地计算机安装插件：hexo-deployer-git和hexo-server"><span class="toc-number">4.0.2.</span> <span class="toc-text">2.在本地计算机安装插件：hexo-deployer-git和hexo-server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-在本地计算机配置Git全局变量"><span class="toc-number">4.0.3.</span> <span class="toc-text">3.在本地计算机配置Git全局变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-使用Hexo生成、发布博客"><span class="toc-number">4.0.4.</span> <span class="toc-text">4.使用Hexo生成、发布博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#参考文献"><span class="toc-number">4.0.5.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>

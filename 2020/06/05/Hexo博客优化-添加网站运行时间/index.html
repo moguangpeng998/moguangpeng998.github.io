@@ -16,8 +16,9 @@
 <meta property="og:description" content="目的&amp;emsp;&amp;emsp;让自己的努力可以量化，成就感随着天数增加而增加！（装逼）">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/1.png">
+<meta property="og:image" content="/2020/06/05/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/1.png">
 <meta property="article:published_time" content="2020-06-05T00:32:39.000Z">
-<meta property="article:modified_time" content="2020-06-12T05:29:48.568Z">
+<meta property="article:modified_time" content="2020-06-12T06:55:49.539Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="主题个性化">
@@ -90,7 +91,7 @@
 		</nav>
 		<nav>
 			<ul style="font-size:12px; font-style:oblique; font-weight:100">
-				总文章数：16
+				总文章数：18
 			</ul>
 		</nav>
 		<br/>
@@ -210,6 +211,8 @@
 <h2 id="添加网站运行时间"><a href="#添加网站运行时间" class="headerlink" title="添加网站运行时间"></a>添加网站运行时间</h2><p>&emsp;&emsp;打开<code>/bolg/themes/主题名/layout/_partial/footer.ejs</code>文件，在适当位置添加如下代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;span id&#x3D;&quot;timeDate&quot;&gt;载入天数...&lt;&#x2F;span&gt;&lt;span id&#x3D;&quot;times&quot;&gt;载入时分秒...&lt;&#x2F;span&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var now &#x3D; new Date(); </span><br><span class="line">    function createtime() &#123; </span><br><span class="line">        var grt&#x3D; new Date(&quot;08&#x2F;10&#x2F;2018 17:38:00&quot;);&#x2F;&#x2F;在此处修改你的建站时间</span><br><span class="line">        now.setTime(now.getTime()+250); </span><br><span class="line">        days &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 &#x2F; 24; dnum &#x3D; Math.floor(days); </span><br><span class="line">        hours &#x3D; (now - grt ) &#x2F; 1000 &#x2F; 60 &#x2F; 60 - (24 * dnum); hnum &#x3D; Math.floor(hours); </span><br><span class="line">        if(String(hnum).length &#x3D;&#x3D;1 )&#123;hnum &#x3D; &quot;0&quot; + hnum;&#125; minutes &#x3D; (now - grt ) &#x2F; 1000 &#x2F;60 - (24 * 60 * dnum) - (60 * hnum); </span><br><span class="line">        mnum &#x3D; Math.floor(minutes); if(String(mnum).length &#x3D;&#x3D;1 )&#123;mnum &#x3D; &quot;0&quot; + mnum;&#125; </span><br><span class="line">        seconds &#x3D; (now - grt ) &#x2F; 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); </span><br><span class="line">        snum &#x3D; Math.round(seconds); if(String(snum).length &#x3D;&#x3D;1 )&#123;snum &#x3D; &quot;0&quot; + snum;&#125; </span><br><span class="line">        document.getElementById(&quot;timeDate&quot;).innerHTML &#x3D; &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;; </span><br><span class="line">        document.getElementById(&quot;times&quot;).innerHTML &#x3D; hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;; </span><br><span class="line">    &#125; </span><br><span class="line">setInterval(&quot;createtime()&quot;,250);</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
 <p>&emsp;&emsp;实现效果如下图：<br><img src="/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/1.png" alt></p>
+<img src="/2020/06/05/Hexo%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96-%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/1.png" class>
+
 <h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p><a href="https://zhuanlan.zhihu.com/p/69213954" target="_blank" rel="noopener">Hexo 博客实用功能添加合集（不断更新）</a></p>
 
       
@@ -423,7 +426,7 @@
 		</span>
 		<i class="fas fa-chart-area"></i>
 		<span class="post-count">
-			总字数统计：10.1k字
+			总字数统计：10.7k字
 			</span>
 	</div>
 	<!-- 根据个人喜好在相应位置添加以上代码 -->
@@ -540,6 +543,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">主题个性化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">博客优化</a>
               </li>
              
               <li class="article-tag-list-item">

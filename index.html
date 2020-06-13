@@ -322,11 +322,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="出错场景"><a href="#出错场景" class="headerlink" title="出错场景"></a>出错场景</h2><p>&emsp;&emsp;在客户端（Windows）部署Hexo博客到服务器（Centos）时，执行<code>hexo d</code>命令时出现该警告。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>&emsp;&emsp;LF和CRLF其实都是换行符，但是不同的是，LF是linux和Unix系统的换行符，CRLF是window 系统的换行符。这就给跨平台的协作的项目带来了问题，保存文件到底是使用哪个标准呢？ git为了解决这个问题，提供了一个”换行符自动转换“的功能，并且这个功能是默认处于”自动模式“即开启状态的。<br>这个换行符自动转换会把自动把你代码里 与你当前操作系统不相同的换行的方式 转换成当前系统的换行方式（即LF和CRLF 之间的转换），这样一来，当你提交代码的时候，即使你没有修改过某个文件，也被git认为你修改过了，从而提示”LF will be replaced by CRLF in ……”</p>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>&emsp;&emsp;最简单的一种办法就是把自动转换功能关掉即可。<br>&emsp;&emsp;输入命令 ：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config core.autocrlf false (仅对当前git仓库有效）</span><br><span class="line">git config --global core.autocrlf false (全局有效）</span><br></pre></td></tr></table></figure>
-<h4 id="原文链接"><a href="#原文链接" class="headerlink" title="原文链接"></a>原文链接</h4><p>版权声明：本文为CSDN博主「man_zuo」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/man_zuo/article/details/88651416" target="_blank" rel="noopener">https://blog.csdn.net/man_zuo/article/details/88651416</a></p>
-
+        
       
       
       

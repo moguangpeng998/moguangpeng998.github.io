@@ -5,31 +5,31 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://101.37.89.203">
+  <link rel="dns-prefetch" href="http://101.37.89.203">
   <title>Hexo博客部署到github上 | MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一、前言&amp;emsp;&amp;emsp;将本地的Hexo博客发布到github上（不花钱）。 二、部署博客到github上 1.登录github2.创建一个创库  &amp;emsp;&amp;emsp;注意：用户部署个人博客的github创库名称必须符合特定要求才行&amp;emsp;&amp;emsp;命名要求：_ 昵称.github.io 3.在bolg目录下安装git部署插件&amp;emsp;&amp;emsp;MAC：cnpm instal">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客部署到github上">
-<meta property="og:url" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/index.html">
+<meta property="og:url" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/index.html">
 <meta property="og:site_name" content="MoonBird博客">
 <meta property="og:description" content="一、前言&amp;emsp;&amp;emsp;将本地的Hexo博客发布到github上（不花钱）。 二、部署博客到github上 1.登录github2.创建一个创库  &amp;emsp;&amp;emsp;注意：用户部署个人博客的github创库名称必须符合特定要求才行&amp;emsp;&amp;emsp;命名要求：_ 昵称.github.io 3.在bolg目录下安装git部署插件&amp;emsp;&amp;emsp;MAC：cnpm instal">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.1.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.2.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.3.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.4.1.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.4.2.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.5.1.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.6.1.png">
-<meta property="og:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.7.1.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.1.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.2.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.3.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.4.1.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.4.2.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.5.1.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.6.1.png">
+<meta property="og:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.7.1.png">
 <meta property="article:published_time" content="2020-05-22T09:06:05.000Z">
 <meta property="article:modified_time" content="2020-06-14T05:10:51.721Z">
 <meta property="article:author" content="MoonBird">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="github">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.1.png">
+<meta name="twitter:image" content="http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/3.2.1.png">
   
     <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
@@ -265,7 +265,7 @@
     
     <br>
     <strong>本文链接：</strong>
-    <a href="https://101.37.89.203/2020/05/22/Hexo博客部署到github上/" title="Hexo博客部署到github上" target="_blank">https://101.37.89.203/2020/05/22/Hexo博客部署到github上/</a>
+    <a href="http://101.37.89.203/2020/05/22/Hexo博客部署到github上/" title="Hexo博客部署到github上" target="_blank">http://101.37.89.203/2020/05/22/Hexo博客部署到github上/</a>
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -369,7 +369,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://101.37.89.203/2020/05/22/Hexo%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2%E5%88%B0github%E4%B8%8A/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -592,11 +592,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">github</a>
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">博客属性</a>
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -604,7 +604,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
+                <a href="javascript:void(0)" class="js-tag color5">博客属性</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -617,14 +625,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">青春易逝</a>
               </li>
             
             <div class="clearfix"></div>

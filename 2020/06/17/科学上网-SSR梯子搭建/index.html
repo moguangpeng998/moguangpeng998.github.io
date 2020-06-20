@@ -6,21 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.moonbird.top">
-  <title>Tag: git | MoonBird博客</title>
+  <title>科学上网-SSR梯子搭建 | MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="广东科技学院2016级，软件设计师。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MoonBird博客">
-<meta property="og:url" content="http://www.moonbird.top/tags/git/index.html">
+  <meta name="description" content="1.前言&amp;emsp;&amp;emsp;本文利用linux vps + ShadowsocksR（ssrmu.sh脚本）快速搭建自己的梯子服务器。搭建过程分为以下几步：&amp;emsp;&amp;emsp;1.租借VPS&amp;emsp;&amp;emsp;2.安装ssh远程登录客户端&amp;emsp;&amp;emsp;3.通过ssrmu.sh脚本安装ShadowsocksR&amp;emsp;&amp;emsp;4.安装SSR客户端，科学上网 2.相关知识2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="科学上网-SSR梯子搭建">
+<meta property="og:url" content="http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="MoonBird博客">
-<meta property="og:description" content="广东科技学院2016级，软件设计师。">
+<meta property="og:description" content="1.前言&amp;emsp;&amp;emsp;本文利用linux vps + ShadowsocksR（ssrmu.sh脚本）快速搭建自己的梯子服务器。搭建过程分为以下几步：&amp;emsp;&amp;emsp;1.租借VPS&amp;emsp;&amp;emsp;2.安装ssh远程登录客户端&amp;emsp;&amp;emsp;3.通过ssrmu.sh脚本安装ShadowsocksR&amp;emsp;&amp;emsp;4.安装SSR客户端，科学上网 2.相关知识2">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/1.png">
+<meta property="og:image" content="http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/2.png">
+<meta property="og:image" content="http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/3.png">
+<meta property="article:published_time" content="2020-06-17T01:31:03.000Z">
+<meta property="article:modified_time" content="2020-06-17T08:51:32.160Z">
 <meta property="article:author" content="MoonBird">
-<meta property="article:tag" content="后端">
-<meta property="article:tag" content="java">
-<meta property="article:tag" content="python">
-<meta property="article:tag" content="机器学习。">
+<meta property="article:tag" content="科学上网">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/1.png">
   
     <link rel="alternative" href="/atom.xml" title="MoonBird博客" type="application/atom+xml">
   
@@ -162,60 +165,231 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-科学上网-SSR梯子搭建" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/13/warning-LF-will-be-replaced-by-CRLF-in-%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="archive-article-date">
-  	<time datetime="2020-06-13T01:58:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/13/warning-LF-will-be-replaced-by-CRLF-in-%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">warning: LF will be replaced by CRLF in ** 的原因及解决办法【转载】</a>
+    <h1 class="article-title" itemprop="name">
+      科学上网-SSR梯子搭建
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        <!--可在此处添加-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  文章字数: </span>
+        <span class="post-count">995字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">3分</span>
+      </span>
+    </span>
+	
+</div>
+        
+        
+        <a href="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2020-06-17T01:31:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>&emsp;&emsp;本文利用<code>linux vps</code> + <code>ShadowsocksR</code>（<code>ssrmu.sh</code>脚本）快速搭建自己的梯子服务器。搭建过程分为以下几步：<br>&emsp;&emsp;1.租借VPS<br>&emsp;&emsp;2.安装ssh远程登录客户端<br>&emsp;&emsp;3.通过ssrmu.sh脚本安装ShadowsocksR<br>&emsp;&emsp;4.安装SSR客户端，科学上网</p>
+<h1 id="2-相关知识"><a href="#2-相关知识" class="headerlink" title="2.相关知识"></a>2.相关知识</h1><h2 id="2-1vps简要原理"><a href="#2-1vps简要原理" class="headerlink" title="2.1vps简要原理"></a>2.1vps简要原理</h2><blockquote>
+<p>&emsp;&emsp;VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。实现VPS的技术分为容器 [1] 技术，和虚拟化技术 [2] 。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统、实现不同VPS间磁盘空间、内存、CPU资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。VPS可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS为使用者提供了管理配置的自由，可用于企业虚拟化，也可以用于IDC资源租用。<br>&emsp;&emsp;IDC资源租用，由VPS提供商提供。不同VPS提供商所使用的硬件VPS软件的差异，及销售策略的不同，VPS的使用体验也有较大差异。尤其是VPS提供商超卖，导致实体服务器超负荷时，VPS性能将受到极大影响。相对来说，容器技术比虚拟机技术硬件使用效率更高，更易于超卖，所以一般来说容器VPS的价格都高于虚拟机VPS的价格。<br>&emsp;&emsp;这些VPS主机以最大化的效率共享硬件、软件许可证以及管理资源。每个VPS主机都可选配独立公网IP地址、独立操作系统、独立超大空间、独立内存、独立CPU资源、独立执行程序和独立系统配置等. VPS主机用户除了可以分配多个虚拟主机及无限企业邮箱外， 更具有独立主机功能, 可自行安装程序，单独重启或重装主机（部分虚拟化/容器技术不支持更换内核）。<br>&emsp;&emsp;简单理解VPS就是通过虚拟化技术隔离出来的系统。</p>
+</blockquote>
+<p align="right">——————百度百科</p>
+
+<p>&emsp;&emsp;可以把vps看成一台服务器，通过远程登录（PC，手机都可以），在上面部署服务（例如：搭建博客、右键服务器、ftp服务器、云盘等），同样，可以用来搭建梯子，将它变成一台<strong>代理服务器</strong>。当服务器的ip在国外的时候，可以不受<strong>墙</strong>的限制，这是利用这个服务器<strong>科学上网</strong>的关键，它的原理是但你访问被墙的网站（例如youtobe等），让它替代你访问，所有信息预先加载在你的代理服务器中，再通过服务器转给你，因为墙没有封锁所有的国外ip，只要你能链接你自己的vps，即可达到科学上网的目的。</p>
+<h1 id="3-搭建阶段"><a href="#3-搭建阶段" class="headerlink" title="3.搭建阶段"></a>3.搭建阶段</h1><h2 id="3-1vps租借"><a href="#3-1vps租借" class="headerlink" title="3.1vps租借"></a>3.1vps租借</h2><p>&emsp;&emsp;购买vps的主要原因是可以随时重建服务器，相当于当ip被墙时更换ip，另外Vultr还可以选择日本节点，访问速度更快。<br>&emsp;&emsp;注册登录<a href="https://my.vultr.com" target="_blank" rel="noopener">Vultr</a>，首次登录需要完善信息，并且最少充值10刀（可使用支付宝支付）。<br>&emsp;&emsp;点击网站左部导航栏的<strong>Products</strong>，进入购买页面，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/1.png" class>
+<p>&emsp;&emsp;选择配置，推荐系统使用Centos7，因为使用的脚本是Centos7环境下的，另外配置选择Tokyo节点、5刀，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/2.png" class>
+<p>&emsp;&emsp;做完上面选择即可点击右下角<strong>Deploy Now</strong>完成部署，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/3.png" class>
+<p>&emsp;&emsp;在上一步做完后页面会跳转到products节目</p>
+<h2 id="3-2ssh客户端安装"><a href="#3-2ssh客户端安装" class="headerlink" title="3.2ssh客户端安装"></a>3.2ssh客户端安装</h2><p>&emsp;&emsp;推荐使用<code>putty</code>或<code>xshell</code>，百度下载即可</p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4>
+      
+	  
+	  
+	  <!--以下是添加结尾提示语-->
+	  
+       
+         <div class="essayending">
+           <div>
+            <div style="text-align:center;color: #ccc;font-size:22px;">
+            <br/>
+            <br/>
+ -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
+            <br/>
+            <br/>
+             <br/>
+             <br/>
+            </div>
+           </div>
+         </div>
+         
+       
+		
+
+		<!--以上是添加结尾提示语 -->
+      
+      
+
+  <div class="declare" hidden="hidden"></div>
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">科学上网</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
   </div>
-</article>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.moonbird.top/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+	
+		<span class="archive-article-date">
+			阅读量 <span id="busuanzi_value_page_pv"></span>
+		</span>
+	
+  </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/06/13/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E8%92%9C%E5%AD%90%E5%92%8Clive2d%E7%9C%8B%E6%9D%BF%E5%A8%98%E5%86%B2%E7%AA%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo博客不蒜子和live2d看板娘冲突问题解决方案</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-前言"><span class="toc-number">1.</span> <span class="toc-text">1.前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-相关知识"><span class="toc-number">2.</span> <span class="toc-text">2.相关知识</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1vps简要原理"><span class="toc-number">2.1.</span> <span class="toc-text">2.1vps简要原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-搭建阶段"><span class="toc-number">3.</span> <span class="toc-text">3.搭建阶段</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#3-1vps租借"><span class="toc-number">3.1.</span> <span class="toc-text">3.1vps租借</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-2ssh客户端安装"><span class="toc-number">3.2.</span> <span class="toc-text">3.2ssh客户端安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#参考文献"><span class="toc-number">3.2.0.1.</span> <span class="toc-text">参考文献</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+
+
+
 
 
           </div>
@@ -273,9 +447,9 @@ setInterval("createtime()",250);
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

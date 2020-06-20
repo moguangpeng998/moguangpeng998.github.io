@@ -5,13 +5,13 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://101.37.89.203">
+  <link rel="dns-prefetch" href="http://www.moonbird.top">
   <title>MoonBird博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="广东科技学院2016级，软件设计师。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="MoonBird博客">
-<meta property="og:url" content="http://101.37.89.203/index.html">
+<meta property="og:url" content="http://www.moonbird.top/index.html">
 <meta property="og:site_name" content="MoonBird博客">
 <meta property="og:description" content="广东科技学院2016级，软件设计师。">
 <meta property="og:locale" content="zh_CN">
@@ -88,7 +88,7 @@
 		</nav>
 		<nav>
 			<ul style="font-size:12px; font-style:oblique; font-weight:100">
-				总文章数：21
+				总文章数：22
 			</ul>
 		</nav>
 		<br/>
@@ -255,6 +255,130 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/05/26/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8ECS%E4%B8%8A%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">阅读更多！ >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+	
+  </article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
+    <article id="post-科学上网-SSR梯子搭建" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/">科学上网-SSR梯子搭建</a>
+    </h1>
+  
+
+        <!--可在此处添加-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  文章字数: </span>
+        <span class="post-count">995字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">3分</span>
+      </span>
+    </span>
+	
+</div>
+        
+        
+        <a href="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/" class="archive-article-date">
+  	<time datetime="2020-06-17T01:31:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h1><p>&emsp;&emsp;本文利用<code>linux vps</code> + <code>ShadowsocksR</code>（<code>ssrmu.sh</code>脚本）快速搭建自己的梯子服务器。搭建过程分为以下几步：<br>&emsp;&emsp;1.租借VPS<br>&emsp;&emsp;2.安装ssh远程登录客户端<br>&emsp;&emsp;3.通过ssrmu.sh脚本安装ShadowsocksR<br>&emsp;&emsp;4.安装SSR客户端，科学上网</p>
+<h1 id="2-相关知识"><a href="#2-相关知识" class="headerlink" title="2.相关知识"></a>2.相关知识</h1><h2 id="2-1vps简要原理"><a href="#2-1vps简要原理" class="headerlink" title="2.1vps简要原理"></a>2.1vps简要原理</h2><blockquote>
+<p>&emsp;&emsp;VPS（Virtual Private Server 虚拟专用服务器）技术，将一台服务器分割成多个虚拟专享服务器的优质服务。实现VPS的技术分为容器 [1] 技术，和虚拟化技术 [2] 。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统、实现不同VPS间磁盘空间、内存、CPU资源、进程和系统配置的隔离，为用户和应用程序模拟出“独占”使用计算资源的体验。VPS可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS为使用者提供了管理配置的自由，可用于企业虚拟化，也可以用于IDC资源租用。<br>&emsp;&emsp;IDC资源租用，由VPS提供商提供。不同VPS提供商所使用的硬件VPS软件的差异，及销售策略的不同，VPS的使用体验也有较大差异。尤其是VPS提供商超卖，导致实体服务器超负荷时，VPS性能将受到极大影响。相对来说，容器技术比虚拟机技术硬件使用效率更高，更易于超卖，所以一般来说容器VPS的价格都高于虚拟机VPS的价格。<br>&emsp;&emsp;这些VPS主机以最大化的效率共享硬件、软件许可证以及管理资源。每个VPS主机都可选配独立公网IP地址、独立操作系统、独立超大空间、独立内存、独立CPU资源、独立执行程序和独立系统配置等. VPS主机用户除了可以分配多个虚拟主机及无限企业邮箱外， 更具有独立主机功能, 可自行安装程序，单独重启或重装主机（部分虚拟化/容器技术不支持更换内核）。<br>&emsp;&emsp;简单理解VPS就是通过虚拟化技术隔离出来的系统。</p>
+</blockquote>
+<p align="right">——————百度百科</p>
+
+<p>&emsp;&emsp;可以把vps看成一台服务器，通过远程登录（PC，手机都可以），在上面部署服务（例如：搭建博客、右键服务器、ftp服务器、云盘等），同样，可以用来搭建梯子，将它变成一台<strong>代理服务器</strong>。当服务器的ip在国外的时候，可以不受<strong>墙</strong>的限制，这是利用这个服务器<strong>科学上网</strong>的关键，它的原理是但你访问被墙的网站（例如youtobe等），让它替代你访问，所有信息预先加载在你的代理服务器中，再通过服务器转给你，因为墙没有封锁所有的国外ip，只要你能链接你自己的vps，即可达到科学上网的目的。</p>
+<h1 id="3-搭建阶段"><a href="#3-搭建阶段" class="headerlink" title="3.搭建阶段"></a>3.搭建阶段</h1><h2 id="3-1vps租借"><a href="#3-1vps租借" class="headerlink" title="3.1vps租借"></a>3.1vps租借</h2><p>&emsp;&emsp;购买vps的主要原因是可以随时重建服务器，相当于当ip被墙时更换ip，另外Vultr还可以选择日本节点，访问速度更快。<br>&emsp;&emsp;注册登录<a href="https://my.vultr.com" target="_blank" rel="noopener">Vultr</a>，首次登录需要完善信息，并且最少充值10刀（可使用支付宝支付）。<br>&emsp;&emsp;点击网站左部导航栏的<strong>Products</strong>，进入购买页面，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/1.png" class>
+<p>&emsp;&emsp;选择配置，推荐系统使用Centos7，因为使用的脚本是Centos7环境下的，另外配置选择Tokyo节点、5刀，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/2.png" class>
+<p>&emsp;&emsp;做完上面选择即可点击右下角<strong>Deploy Now</strong>完成部署，如图：</p>
+<img src="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/3.png" class>
+<p>&emsp;&emsp;在上一步做完后页面会跳转到products节目</p>
+<h2 id="3-2ssh客户端安装"><a href="#3-2ssh客户端安装" class="headerlink" title="3.2ssh客户端安装"></a>3.2ssh客户端安装</h2><p>&emsp;&emsp;推荐使用<code>putty</code>或<code>xshell</code>，百度下载即可</p>
+<h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4>
+      
+	  
+	  
+	  <!--以下是添加结尾提示语-->
+	  
+
+		<!--以上是添加结尾提示语 -->
+      
+      
+
+  <div class="declare" hidden="hidden"></div>
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">科学上网</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/06/17/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91-SSR%E6%A2%AF%E5%AD%90%E6%90%AD%E5%BB%BA/">阅读更多！ >></a>
         </p>
       
 
@@ -1188,116 +1312,6 @@
 
 
   
-    <article id="post-uzi-我心中的神" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/03/uzi-%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E7%A5%9E/">“uzi”,青春的印记</a>
-    </h1>
-  
-
-        <!--可在此处添加-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  文章字数: </span>
-        <span class="post-count">1.1k字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">3分</span>
-      </span>
-    </span>
-	
-</div>
-        
-        
-        <a href="/2020/06/03/uzi-%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E7%A5%9E/" class="archive-article-date">
-  	<time datetime="2020-06-03T12:59:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>&emsp;&emsp;2020年6月3日这天，我还是和往常一样在摸鱼混日子，刷着视频的时候突然手机弹出一个消息，那个被称为“永远滴神”的男人退役了，我还以为又是哪个营销号在那里胡乱猜测，但是过了几秒各种app陆续都推送了这条消息，我很意外，以前有想过他会退役，毕竟8年的职业生涯已经是这个行业的“老人”了，况且他还一直高强度的训练，这成就了他，也造成了现在因为身体原因不得不退役，虽然他只有23岁，但是没想到这么突然，一直觉得他至少会在打完今年在中国举办的世界赛再退役，也许生活就是这样，处处充满意外和惊喜。</p>
-        
-      
-	  
-	  
-	  <!--以下是添加结尾提示语-->
-	  
-
-		<!--以上是添加结尾提示语 -->
-      
-      
-
-  <div class="declare" hidden="hidden"></div>
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">青春易逝</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/03/uzi-%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E7%A5%9E/">阅读更多！ >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-	
-  </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
@@ -1316,7 +1330,7 @@
 		总访客量: <span id="busuanzi_value_site_uv"></span>人次|
 		<i class="fas fa-chart-area"></i>
 		<span class="post-count">
-			总字数统计：12.2k字
+			总字数统计：13.2k字
 			</span>
 	</div>
 	<!-- 根据个人喜好在相应位置添加以上代码 -->
@@ -1430,19 +1444,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">主题个性化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">系统安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1470,6 +1480,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">云服务器ECS</a>
               </li>
              
@@ -1478,7 +1492,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color5">科学上网</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">yilia主题</a>
               </li>
             
             <div class="clearfix"></div>
